@@ -85,6 +85,9 @@ class SiameseNetwork:
     def evaluate(self, X, y, **kwargs):
         return self.model.evaluate(X, y, **kwargs)
 
+    def predict(self, X):
+        return self.model.predict(X)
+
 
 
 
